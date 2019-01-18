@@ -1018,31 +1018,26 @@ footer {
 /*代表ブログ---------------------------
 ---------------------------------------------------*/
 .cover_area_kimiblog {
-  background-image: url("../images/blog/kimiblog-cover.jpg");
+  background-image: url("../images/blog/kimiheroimg_pc.jpg");
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   height: 200px; }
   @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
     .cover_area_kimiblog {
-      background-image: url("../images/blog/kimiblog-cover@2x.jpg"); } }
+      background-image: url("../images/blog/kimiheroimg_pc.jpg"); } }
   .cover_area_kimiblog .cover_title_kimi {
     width: 96%;
     max-width: 1024px;
-    margin: 0 auto; }
-  .cover_area_kimiblog .page_title {
-    text-align: left;
-    font-size: 30px;
-    font-size: 3rem;
-    color: #fff;
-    padding-top: 40px;
-    letter-spacing: 0.5rem; }
+    margin: 0 auto;
+    display: flex; }
   .cover_area_kimiblog img {
-    margin-top: 20px;
-    float: left; }
+    margin-top: 50px; }
   .cover_area_kimiblog p {
     color: #fff;
-    margin: 70px 0 0 110px;
     line-height: 1.5;
-    letter-spacing: 0.2rem; }
+    letter-spacing: 0.2rem;
+    margin: 90px 0 0 120px; }
 
 #content {
   justify-content: space-between; }
@@ -1061,11 +1056,7 @@ footer {
   #blog .kimiblogcate, #blog .lunchblogcate {
     padding: 0 10px;
     width: 60px;
-    height: 17px;
-    line-height: 17px;
-    text-align: center;
-    border: 1px solid #333;
-    border-radius: 10px;
+    margin-left: 10px;
     font-size: 11px;
     font-size: 1.1rem; }
   #blog .blog-title img {
@@ -1139,12 +1130,13 @@ footer {
     display: block; }
 
 #blog .blog-index img {
-  float: right;
-  margin-bottom: 20px; }
+  float: left;
+  margin-bottom: 20px;
+  margin-right: 20px; }
 #blog .blog-index li {
   clear: both;
   border-bottom: 1px solid #c5c5c5;
-  height: 110px; }
+  height: 90px; }
   #blog .blog-index li a {
     text-decoration: none;
     color: #333; }

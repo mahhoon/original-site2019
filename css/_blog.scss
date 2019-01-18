@@ -14,39 +14,33 @@
 ---------------------------------------------------*/
 //カバーエリア
     .cover_area_kimiblog {
-        background-image: url("../images/blog/kimiblog-cover.jpg");
+        background-image: url("../images/blog/kimiheroimg_pc.jpg");
         background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
         height: 200px;
+        
 
         @media screen and (-webkit-min-device-pixel-ratio:2), (min-resolution: 2dppx) {
-          background-image: url("../images/blog/kimiblog-cover@2x.jpg");
+          background-image: url("../images/blog/kimiheroimg_pc.jpg");
         }
 
         .cover_title_kimi{
             width: 96%;
             max-width: 1024px;
             margin: 0 auto;
-        }
-
-
-        .page_title {
-            text-align: left;
-            @include fontsize(30);
-            color: #fff;
-            padding-top: 40px;
-            letter-spacing: 0.5rem;
+            display: flex;
         }
 
         img {
-            margin-top: 20px;
-            float: left;
+            margin-top: 50px;
         }
 
         p{
             color: #fff;
-            margin: 70px 0 0 110px;
             line-height: 1.5;
             letter-spacing: 0.2rem;
+            margin: 90px 0 0 120px;
         }
     }
 
@@ -75,11 +69,7 @@
         .kimiblogcate , .lunchblogcate {
                 padding: 0 10px;
                 width: 60px;
-                height: 17px;
-                line-height: 17px;
-                text-align: center;
-                border : 1px solid #333;
-                border-radius: 10px;
+                margin-left: 10px;
                 @include fontsize(11);
             }
 
@@ -185,13 +175,14 @@
     .blog-index {
 
         img {
-            float: right;
+            float: left;
             margin-bottom: 20px;
+            margin-right: 20px;
         }
         li {
             clear: both;
             border-bottom: 1px solid #c5c5c5;
-            height: 110px;
+            height: 90px;
 
             a {
                 text-decoration: none;
