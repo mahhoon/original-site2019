@@ -1,0 +1,58 @@
+@charset "EUC-JP";
+
+
+/* *********************************************************
+
+ * Style Name: clearfix.css
+ * Style URI: http://www.cocoknots.co.jp/css/clearfix.css
+ * Description: clearfix要素
+ * Last Up Date: 2011-10-06
+ * Author: Five-i
+
+ * *********************************************************
+ */
+ 
+/*-----------------------------------------------------------------------------　
+ clearfix要素
+-----------------------------------------------------------------------------*/
+
+
+.clearfix:after {
+	content: " ";  /* 新しい要素を作る */
+	display: block;  /* ブロックレベル要素に */
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+
+.clear {
+	clear:both;
+}
+
+
+/*-----------------------------------------------------*/
+
+#header,
+#main,
+#main_under,
+.whatsnew,
+#contents_link,
+#main_in,
+#main_in_container {
+	zoom:100%;
+	position: relative; /* DreamWeaverのデザインビューで正しく表示させる用 */
+}
+
+#header:after,
+#main:after,
+#main_under:after,
+.whatsnew:after,
+#contents_link:after,
+#main_in:after,
+#main_in_container:after {
+	content: " ";
+	clear: both;
+	height: 0;
+	display: block;
+	visibility: hidden;
+}

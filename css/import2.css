@@ -1,0 +1,16 @@
+@charset "EUC-JP";
+
+/* *********************************************************
+
+ * Style Name: import.css
+ * Style URI: http://www.cocoknots/co/jp/css/import.css
+ * Description: ³ÆCSS¤Ø¤Îimport
+ * Last Up Date: 2011-10-06
+ * Author: FIve-i
+
+ * *********************************************************
+ */
+
+@import url("clearfix.css");
+@import url("styles.css");
+
