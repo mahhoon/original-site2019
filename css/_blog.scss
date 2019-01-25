@@ -10,40 +10,6 @@
     //ナビゲーションメニューの下線
 }
 
-/*代表ブログ---------------------------
----------------------------------------------------*/
-//カバーエリア
-    .cover_area_kimiblog {
-        background-image: url("../images/blog/kimiheroimg_pc.jpg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 200px;
-        
-
-        @media screen and (-webkit-min-device-pixel-ratio:2), (min-resolution: 2dppx) {
-          background-image: url("../images/blog/kimiheroimg_pc.jpg");
-        }
-
-        .cover_title_kimi{
-            width: 96%;
-            max-width: 1024px;
-            margin: 0 auto;
-            display: flex;
-        }
-
-        img {
-            margin-top: 50px;
-        }
-
-        p{
-            color: #fff;
-            line-height: 1.5;
-            letter-spacing: 0.2rem;
-            margin: 90px 0 0 120px;
-        }
-    }
-
 //2カラム設定 （ブログページ）
     #content {
         justify-content: space-between;
@@ -55,84 +21,7 @@
             width: 240px;
         }
     }
-
-
-//ブログ部分
-    #blog {
-        margin-top: 50px;
-
-        .date , .kimiblogcate {
-            margin-left: 30px;
-            @include fontsize(12);
-            line-height: 3;
-        }
-        .kimiblogcate , .lunchblogcate {
-                padding: 0 10px;
-                width: 60px;
-                margin-left: 10px;
-                @include fontsize(11);
-            }
-
-        .blog-title {
-
-            img{
-                float: left;
-                margin-bottom: 10px;
-            }
-            h2 {
-                @include fontsize(26);
-                font-weight: bold;
-                padding: 30px 0 50px 270px;
-            }
-
-            p {
-                clear: both;
-                border-top: 1px solid #333;
-                padding-top: 40px;
-                line-height: 2;
-                letter-spacing: 0.1rem;
-            }
-        }
-
-
-        .page_navi {
-            text-align :center;
-            margin-top: 50px;
-
-            a {
-                text-decoration: none;
-                color: #333;
-                width: 180px;
-                height: 20px;
-                line-height: 20px;
-                border: 1px solid #a6a6a6;
-                padding: 10px 30px;
-                display: inline-block;
-            }
-            .goprevious {
-                text-align: right;
-            }
-            .gonext {
-                text-align: left;
-            }
-
-            .goindex {
-                margin-top: 20px;
-                width: 100px;
-                height: 14px;
-                line-height: 14px;
-                padding: 5px;
-                border-radius: 6px;
-            }
-        }
-
-        .snsbutton {
-            text-align: center;
-            margin-top: 30px;
-        }
-
-    }
-
+    
 //ウィジェット
 .widget {
     box-sizing: border-box;
@@ -168,49 +57,7 @@
         display: block;
     }
 }
-
-//一覧ページ
-#blog {
-
-    .blog-index {
-
-        img {
-            float: left;
-            margin-bottom: 20px;
-            margin-right: 20px;
-        }
-        li {
-            clear: both;
-            border-bottom: 1px solid #c5c5c5;
-            height: 90px;
-
-            a {
-                text-decoration: none;
-                color: #333;
-            }
-        }
-
-        span {
-            margin: 0;
-        }
-
-        h3 {
-            @include fontsize(16);
-            font-weight: bold;
-            padding: 15px 0;
-        }
-        .kimiblogcate , .lunchblogcate {
-            @include fontsize(11);
-        }
-    }
-
-    #detail_button {
-        height: 12px;
-        line-height: 12px;
-        border-radius: 20px;
-    }
-}
-
+    
 //コラム一覧ページ
 .cover_area_blog {
     .page_title {
@@ -305,17 +152,221 @@
     }
 }
 
+/*代表ブログ---------------------------
+---------------------------------------------------*/
+//カバーエリア
+    .cover_area_kimiblog {
+        background-image: url("../images/blog/kimiheroimg_pc.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 200px;
+        
+
+        @media screen and (-webkit-min-device-pixel-ratio:2), (min-resolution: 2dppx) {
+          background-image: url("../images/blog/kimiheroimg_pc.jpg");
+        }
+
+        .cover_title_kimi{
+            width: 96%;
+            max-width: 1024px;
+            margin: 0 auto;
+            display: flex;
+        }
+
+        img {
+            margin-top: 50px;
+        }
+
+        p{
+            color: #fff;
+            line-height: 1.5;
+            letter-spacing: 0.2rem;
+            margin: 90px 0 0 120px;
+        }
+    }
+
+
+//ブログ部分
+    #blog {
+        margin-top: 50px;
+        
+        .blog_wrap{
+             border-bottom: 1px solid #333;
+             margin-bottom: 50px;
+             padding-bottom: 30px;
+        }
+
+        .date {
+            @include fontsize(13);
+            line-height: 3;
+        }
+        
+        .blog-footer {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            .kimiblogcate {
+                background-color: #c6c6c6;
+                padding: 0 15px;
+                border-radius: 5px;
+                margin-right: 10px;
+            }
+            .snsbutton {
+                height: 40px;
+                display: flex;
+                p {
+                    line-height: 40px;
+                    display: inline-block;
+                    margin-left: 10px;
+                }
+            }
+        }
+
+         .lunchblogcate {
+                width: 60px;
+                @include fontsize(11);
+                margin-bottom: 10px;
+            }
+
+        .blog-title {
+
+            img{
+                margin: 10px 0 10px;
+                display: block;
+            }
+            h2 {
+                @include fontsize(26);
+                font-weight: bold;
+                padding: 0;
+            }
+
+            p {
+                clear: both;
+                padding-top: 20px;
+                line-height: 2;
+                letter-spacing: 0.1rem;
+                @include fontsize(15);
+            }
+        }
+
+
+        .page_navi {
+            text-align :center;
+            margin-top: 50px;
+
+            a {
+                text-decoration: none;
+                color: #333;
+                width: 180px;
+                height: 20px;
+                line-height: 20px;
+                border: 1px solid #a6a6a6;
+                padding: 10px 30px;
+                display: inline-block;
+            }
+            .goprevious {
+                text-align: right;
+            }
+            .gonext {
+                text-align: left;
+            }
+
+            .goindex {
+                margin-top: 20px;
+                width: 100px;
+                height: 14px;
+                line-height: 14px;
+                padding: 5px;
+                border-radius: 6px;
+            }
+        }
+
+    }
+
+
+//一覧ページ
+#blog {
+
+    .blog-index {
+
+        img {
+            float: left;
+            margin-bottom: 20px;
+            margin-right: 20px;
+        }
+        li {
+            clear: both;
+            border-bottom: 1px solid #c5c5c5;
+            height: 90px;
+
+            a {
+                text-decoration: none;
+                color: #333;
+            }
+        }
+
+        span {
+            margin: 0;
+        }
+
+        h3 {
+            @include fontsize(16);
+            font-weight: bold;
+            padding: 15px 0;
+        }
+        .kimiblogcate , .lunchblogcate {
+            @include fontsize(11);
+        }
+    }
+    
+    .lunch-index {
+        li {
+        height: 120px;
+        padding-top: 20px;
+        }
+        .lunchblogcate {
+            background-color: #c6c6c6;
+            padding: 0 15px;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+    }
+
+    #detail_button {
+        height: 12px;
+        line-height: 12px;
+        border-radius: 20px;
+    }
+}
+
+
+
 /*ココランチ---------------------------
 ---------------------------------------------------*/
 //カバーエリア
     .cover_area_cocolunch {
-        background-image: url("../images/blog/cocolunch.jpg");
+        background-image: url("../images/blog/cocolunch_heroimg_pc.png");
         background-size: cover;
         height: 200px;
 
         @media screen and (-webkit-min-device-pixel-ratio:2), (min-resolution: 2dppx) {
-          background-image: url("../images/blog/cocolunch@2x.jpg");
+          background-image: url("../images/blog/cocolunch_heroimg_pc@2x.png");
         }
+        
+        .cocolunch_title {
+            width: 96%;
+            max-width: 1024px;
+            margin: 0 auto;
+            padding-top: 20px;
+        }
+    }
+    .introduction {
+        p {
+            padding: 15px 0;
+        }
+        border-bottom: 1px solid #c5c5c5;
+        margin-bottom: 30px;
     }
 
 //一覧ページ

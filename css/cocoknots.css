@@ -107,7 +107,7 @@ body {
 
 .fixed {
   position: fixed;
-  background-color: #fdfcf9;
+  background-color: #f1f0ef;
   border-top: 5px solid #26499d;
   border-bottom: 1px solid #cfd9f3;
   padding-top: 10px;
@@ -1015,90 +1015,12 @@ footer {
 #head_navi .head_nav .bloggray {
   border-bottom: 0px solid #F1F0EF; }
 
-/*代表ブログ---------------------------
----------------------------------------------------*/
-.cover_area_kimiblog {
-  background-image: url("../images/blog/kimiheroimg_pc.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 200px; }
-  @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
-    .cover_area_kimiblog {
-      background-image: url("../images/blog/kimiheroimg_pc.jpg"); } }
-  .cover_area_kimiblog .cover_title_kimi {
-    width: 96%;
-    max-width: 1024px;
-    margin: 0 auto;
-    display: flex; }
-  .cover_area_kimiblog img {
-    margin-top: 50px; }
-  .cover_area_kimiblog p {
-    color: #fff;
-    line-height: 1.5;
-    letter-spacing: 0.2rem;
-    margin: 90px 0 0 120px; }
-
 #content {
   justify-content: space-between; }
   #content #blog {
     max-width: 700px; }
   #content .widget {
     width: 240px; }
-
-#blog {
-  margin-top: 50px; }
-  #blog .date, #blog .kimiblogcate {
-    margin-left: 30px;
-    font-size: 12px;
-    font-size: 1.2rem;
-    line-height: 3; }
-  #blog .kimiblogcate, #blog .lunchblogcate {
-    padding: 0 10px;
-    width: 60px;
-    margin-left: 10px;
-    font-size: 11px;
-    font-size: 1.1rem; }
-  #blog .blog-title img {
-    float: left;
-    margin-bottom: 10px; }
-  #blog .blog-title h2 {
-    font-size: 26px;
-    font-size: 2.6rem;
-    font-weight: bold;
-    padding: 30px 0 50px 270px; }
-  #blog .blog-title p {
-    clear: both;
-    border-top: 1px solid #333;
-    padding-top: 40px;
-    line-height: 2;
-    letter-spacing: 0.1rem; }
-  #blog .page_navi {
-    text-align: center;
-    margin-top: 50px; }
-    #blog .page_navi a {
-      text-decoration: none;
-      color: #333;
-      width: 180px;
-      height: 20px;
-      line-height: 20px;
-      border: 1px solid #a6a6a6;
-      padding: 10px 30px;
-      display: inline-block; }
-    #blog .page_navi .goprevious {
-      text-align: right; }
-    #blog .page_navi .gonext {
-      text-align: left; }
-    #blog .page_navi .goindex {
-      margin-top: 20px;
-      width: 100px;
-      height: 14px;
-      line-height: 14px;
-      padding: 5px;
-      border-radius: 6px; }
-  #blog .snsbutton {
-    text-align: center;
-    margin-top: 30px; }
 
 .widget {
   box-sizing: border-box;
@@ -1128,32 +1050,6 @@ footer {
     line-height: 20px;
     padding: 10px;
     display: block; }
-
-#blog .blog-index img {
-  float: left;
-  margin-bottom: 20px;
-  margin-right: 20px; }
-#blog .blog-index li {
-  clear: both;
-  border-bottom: 1px solid #c5c5c5;
-  height: 90px; }
-  #blog .blog-index li a {
-    text-decoration: none;
-    color: #333; }
-#blog .blog-index span {
-  margin: 0; }
-#blog .blog-index h3 {
-  font-size: 16px;
-  font-size: 1.6rem;
-  font-weight: bold;
-  padding: 15px 0; }
-#blog .blog-index .kimiblogcate, #blog .blog-index .lunchblogcate {
-  font-size: 11px;
-  font-size: 1.1rem; }
-#blog #detail_button {
-  height: 12px;
-  line-height: 12px;
-  border-radius: 20px; }
 
 .cover_area_blog .page_title {
   box-sizing: border-box;
@@ -1225,15 +1121,154 @@ footer {
   #blogindex_wrap #detail_button {
     text-align: center; }
 
+/*代表ブログ---------------------------
+---------------------------------------------------*/
+.cover_area_kimiblog {
+  background-image: url("../images/blog/kimiheroimg_pc.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 200px; }
+  @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+    .cover_area_kimiblog {
+      background-image: url("../images/blog/kimiheroimg_pc.jpg"); } }
+  .cover_area_kimiblog .cover_title_kimi {
+    width: 96%;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex; }
+  .cover_area_kimiblog img {
+    margin-top: 50px; }
+  .cover_area_kimiblog p {
+    color: #fff;
+    line-height: 1.5;
+    letter-spacing: 0.2rem;
+    margin: 90px 0 0 120px; }
+
+#blog {
+  margin-top: 50px; }
+  #blog .blog_wrap {
+    border-bottom: 1px solid #333;
+    margin-bottom: 50px;
+    padding-bottom: 30px; }
+  #blog .date {
+    font-size: 13px;
+    font-size: 1.3rem;
+    line-height: 3; }
+  #blog .blog-footer {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between; }
+    #blog .blog-footer .kimiblogcate {
+      background-color: #c6c6c6;
+      padding: 0 15px;
+      border-radius: 5px;
+      margin-right: 10px; }
+    #blog .blog-footer .snsbutton {
+      height: 40px;
+      display: flex; }
+      #blog .blog-footer .snsbutton p {
+        line-height: 40px;
+        display: inline-block;
+        margin-left: 10px; }
+  #blog .lunchblogcate {
+    width: 60px;
+    font-size: 11px;
+    font-size: 1.1rem;
+    margin-bottom: 10px; }
+  #blog .blog-title img {
+    margin: 10px 0 10px;
+    display: block; }
+  #blog .blog-title h2 {
+    font-size: 26px;
+    font-size: 2.6rem;
+    font-weight: bold;
+    padding: 0; }
+  #blog .blog-title p {
+    clear: both;
+    padding-top: 20px;
+    line-height: 2;
+    letter-spacing: 0.1rem;
+    font-size: 15px;
+    font-size: 1.5rem; }
+  #blog .page_navi {
+    text-align: center;
+    margin-top: 50px; }
+    #blog .page_navi a {
+      text-decoration: none;
+      color: #333;
+      width: 180px;
+      height: 20px;
+      line-height: 20px;
+      border: 1px solid #a6a6a6;
+      padding: 10px 30px;
+      display: inline-block; }
+    #blog .page_navi .goprevious {
+      text-align: right; }
+    #blog .page_navi .gonext {
+      text-align: left; }
+    #blog .page_navi .goindex {
+      margin-top: 20px;
+      width: 100px;
+      height: 14px;
+      line-height: 14px;
+      padding: 5px;
+      border-radius: 6px; }
+
+#blog .blog-index img {
+  float: left;
+  margin-bottom: 20px;
+  margin-right: 20px; }
+#blog .blog-index li {
+  clear: both;
+  border-bottom: 1px solid #c5c5c5;
+  height: 90px; }
+  #blog .blog-index li a {
+    text-decoration: none;
+    color: #333; }
+#blog .blog-index span {
+  margin: 0; }
+#blog .blog-index h3 {
+  font-size: 16px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding: 15px 0; }
+#blog .blog-index .kimiblogcate, #blog .blog-index .lunchblogcate {
+  font-size: 11px;
+  font-size: 1.1rem; }
+#blog .lunch-index li {
+  height: 120px;
+  padding-top: 20px; }
+#blog .lunch-index .lunchblogcate {
+  background-color: #c6c6c6;
+  padding: 0 15px;
+  border-radius: 5px;
+  margin-right: 10px; }
+#blog #detail_button {
+  height: 12px;
+  line-height: 12px;
+  border-radius: 20px; }
+
 /*ココランチ---------------------------
 ---------------------------------------------------*/
 .cover_area_cocolunch {
-  background-image: url("../images/blog/cocolunch.jpg");
+  background-image: url("../images/blog/cocolunch_heroimg_pc.png");
   background-size: cover;
   height: 200px; }
   @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
     .cover_area_cocolunch {
-      background-image: url("../images/blog/cocolunch@2x.jpg"); } }
+      background-image: url("../images/blog/cocolunch_heroimg_pc@2x.png"); } }
+  .cover_area_cocolunch .cocolunch_title {
+    width: 96%;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding-top: 20px; }
+
+.introduction {
+  border-bottom: 1px solid #c5c5c5;
+  margin-bottom: 30px; }
+  .introduction p {
+    padding: 15px 0; }
 
 #blog .lunchread {
   padding: 15px;
