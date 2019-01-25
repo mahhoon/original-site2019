@@ -1039,7 +1039,9 @@ footer {
     height: 20px;
     line-height: 20px;
     padding: 10px;
-    display: block; }
+    display: block;
+    border-radius: 6px;
+    font-weight: bold; }
   .widget .gotokimiblog {
     margin-top: 20px;
     text-decoration: none;
@@ -1049,7 +1051,9 @@ footer {
     height: 20px;
     line-height: 20px;
     padding: 10px;
-    display: block; }
+    display: block;
+    border-radius: 6px;
+    font-weight: bold; }
 
 .cover_area_blog .page_title {
   box-sizing: border-box;
@@ -1119,7 +1123,12 @@ footer {
           #blogindex_wrap .blogindex li a .text .coco {
             background-color: #e44da1; }
   #blogindex_wrap #detail_button {
-    text-align: center; }
+    text-align: center;
+    height: 12px;
+    line-height: 12px;
+    border-radius: 20px;
+    border: 1px solid #a7a7a7;
+    height: 18px; }
 
 /*代表ブログ---------------------------
 ---------------------------------------------------*/
@@ -1171,11 +1180,6 @@ footer {
         line-height: 40px;
         display: inline-block;
         margin-left: 10px; }
-  #blog .lunchblogcate {
-    width: 60px;
-    font-size: 11px;
-    font-size: 1.1rem;
-    margin-bottom: 10px; }
   #blog .blog-title img {
     margin: 10px 0 10px;
     display: block; }
@@ -1203,17 +1207,6 @@ footer {
       border: 1px solid #a6a6a6;
       padding: 10px 30px;
       display: inline-block; }
-    #blog .page_navi .goprevious {
-      text-align: right; }
-    #blog .page_navi .gonext {
-      text-align: left; }
-    #blog .page_navi .goindex {
-      margin-top: 20px;
-      width: 100px;
-      height: 14px;
-      line-height: 14px;
-      padding: 5px;
-      border-radius: 6px; }
 
 #blog .blog-index img {
   float: left;
@@ -1239,15 +1232,11 @@ footer {
 #blog .lunch-index li {
   height: 120px;
   padding-top: 20px; }
-#blog .lunch-index .lunchblogcate {
+#blog .lunchblogcate {
   background-color: #c6c6c6;
   padding: 0 15px;
   border-radius: 5px;
   margin-right: 10px; }
-#blog #detail_button {
-  height: 12px;
-  line-height: 12px;
-  border-radius: 20px; }
 
 /*ココランチ---------------------------
 ---------------------------------------------------*/
@@ -1288,10 +1277,15 @@ footer {
   border-bottom: 1px solid #a9a9a9;
   padding-bottom: 20px; }
   .lunchblog-title h2 {
-    padding: 0 0 30px 0;
     font-size: 26px;
     font-size: 2.6rem;
     font-weight: bold; }
+  .lunchblog-title .restaurant_ruby {
+    padding: 10px 0;
+    font-size: 14px;
+    font-size: 1.4rem; }
+  .lunchblog-title .lunchblogcate {
+    display: inline; }
 
 .restaurant_text {
   margin: 30px 0; }
@@ -1305,12 +1299,9 @@ footer {
 
 .restaurant_info {
   margin: 30px 0;
-  padding: 10px;
-  border: 1px solid #a9a9a9; }
-  .restaurant_info img {
-    float: left; }
+  padding-left: 20px;
+  border-left: 1px solid #a9a9a9; }
   .restaurant_info p {
-    margin-left: 304px;
     font-size: 14px;
     font-size: 1.4rem;
     line-height: 1.5; }
@@ -1320,12 +1311,28 @@ footer {
   font-size: 1.6rem;
   font-weight: bold;
   display: block;
-  margin: 20px 0 10px; }
+  margin: 10px 0 10px; }
 
-.restaurant_info:after {
+.feed_page {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px; }
+  .feed_page .feedpage_button_l, .feed_page .feedpage_button_r {
+    display: block;
+    text-decoration: none;
+    width: 35%;
+    padding: 10px 20px;
+    border: 1px solid #a5a5a5;
+    margin: 0 10px 0 0;
+    border-radius: 4px; }
+  .feed_page .feedpage_button_r {
+    text-align: right; }
+
+.gotoindex {
   display: block;
-  clear: both;
-  content: ""; }
+  text-decoration: none;
+  text-align: center;
+  margin-top: 30px; }
 
 /*PRとはページ---------------------------
 ---------------------------------------------------*/
@@ -2228,5 +2235,23 @@ footer {
     .qs_info .qs_past p, .qs_info_new .qs_past p {
       font-size: 13px;
       font-size: 1.3rem; } }
+/* mobile 設定----------------------------------------
+------------------------------------------------------*/
+@media only screen and (max-width: 768px) {
+  .cover_area_blog {
+    height: 150px; }
+    .cover_area_blog .page_title {
+      height: 90px; }
+
+  #blogindex_wrap {
+    width: 90%;
+    margin: 20px auto; }
+    #blogindex_wrap .blogindex {
+      width: 100%;
+      margin: 10px auto;
+      display: block; }
+      #blogindex_wrap .blogindex li {
+        width: 100%;
+        margin-bottom: 10px; } }
 
 /*# sourceMappingURL=cocoknots.css.map */

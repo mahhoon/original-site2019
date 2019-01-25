@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+    
+    
+/* mobile 設定----------------------------------------
+------------------------------------------------------*/
+
+@media only screen and (max-width: 768px) {    
+    
+//ブログトップページ
+    .cover_area_blog {
+        height: 150px;
+        .page_title {
+            height: 90px;
+        }
+    }
+    #blogindex_wrap {
+        width: 90%;
+        margin: 20px auto;
+        .blogindex {
+            width: 100%;
+            margin: 10px auto;
+            display: block;
+            li {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

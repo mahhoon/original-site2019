@@ -44,6 +44,8 @@
         line-height: 20px;
         padding: 10px;
         display: block;
+        border-radius: 6px;
+        font-weight: bold;
     }
     .gotokimiblog{
         margin-top: 20px;
@@ -55,6 +57,8 @@
         line-height: 20px;
         padding: 10px;
         display: block;
+        border-radius: 6px;
+        font-weight: bold;
     }
 }
     
@@ -149,6 +153,11 @@
 
     #detail_button {
         text-align: center;
+        height: 12px;
+        line-height: 12px;
+        border-radius: 20px;
+        border: 1px solid #a7a7a7;
+        height: 18px;
     }
 }
 
@@ -223,12 +232,6 @@
             }
         }
 
-         .lunchblogcate {
-                width: 60px;
-                @include fontsize(11);
-                margin-bottom: 10px;
-            }
-
         .blog-title {
 
             img{
@@ -264,21 +267,6 @@
                 border: 1px solid #a6a6a6;
                 padding: 10px 30px;
                 display: inline-block;
-            }
-            .goprevious {
-                text-align: right;
-            }
-            .gonext {
-                text-align: left;
-            }
-
-            .goindex {
-                margin-top: 20px;
-                width: 100px;
-                height: 14px;
-                line-height: 14px;
-                padding: 5px;
-                border-radius: 6px;
             }
         }
 
@@ -325,18 +313,13 @@
         height: 120px;
         padding-top: 20px;
         }
-        .lunchblogcate {
-            background-color: #c6c6c6;
-            padding: 0 15px;
-            border-radius: 5px;
-            margin-right: 10px;
-        }
-    }
 
-    #detail_button {
-        height: 12px;
-        line-height: 12px;
-        border-radius: 20px;
+     }
+     .lunchblogcate {
+        background-color: #c6c6c6;
+        padding: 0 15px;
+        border-radius: 5px;
+        margin-right: 10px;
     }
 }
 
@@ -393,9 +376,15 @@
         border-bottom: 1px solid #a9a9a9;
         padding-bottom: 20px;
         h2 {
-            padding: 0 0 30px 0;
             @include fontsize(26);
             font-weight: bold;
+        }
+        .restaurant_ruby {
+            padding: 10px 0;
+            @include fontsize(14);
+        }
+        .lunchblogcate {
+            display: inline;
         }
     }
 
@@ -413,13 +402,10 @@
 
     .restaurant_info{
         margin: 30px 0;
-        padding: 10px;
-        border: 1px solid #a9a9a9;
-        img {
-            float: left;
-        }
+        padding-left: 20px;
+        border-left: 1px solid #a9a9a9;
+
         p{
-            margin-left: 304px;
             @include fontsize(14);
             line-height: 1.5;
             }
@@ -429,11 +415,33 @@
         @include fontsize(16);
         font-weight: bold;
         display: block;
-        margin: 20px 0 10px;
+        margin: 10px 0 10px;
     }
-
-    .restaurant_info:after {
-       display: block;
-       clear: both;
-       content: "";
+    
+    .feed_page {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        
+        .feedpage_button_l , .feedpage_button_r {
+            display: block;
+            text-decoration: none;
+            width: 35%;
+            padding: 10px 20px;
+            border: 1px solid #a5a5a5;
+            margin: 0 10px 0 0;
+            border-radius: 4px;
+        }
+        .feedpage_button_r {
+            text-align: right;
+        }
     }
+    
+//一覧に戻る
+    .gotoindex {
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        margin-top: 30px;
+    }
+    
