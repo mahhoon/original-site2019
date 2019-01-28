@@ -1141,11 +1141,13 @@ footer {
   @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
     .cover_area_kimiblog {
       background-image: url("../images/blog/kimiheroimg_pc.jpg"); } }
-  .cover_area_kimiblog .cover_title_kimi {
+  .cover_area_kimiblog .cover_title_kimi_pc {
     width: 96%;
     max-width: 1024px;
     margin: 0 auto;
     display: flex; }
+  .cover_area_kimiblog .cover_title_kimi_sp {
+    display: none; }
   .cover_area_kimiblog img {
     margin-top: 50px; }
   .cover_area_kimiblog p {
@@ -1247,11 +1249,13 @@ footer {
   @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
     .cover_area_cocolunch {
       background-image: url("../images/blog/cocolunch_heroimg_pc@2x.png"); } }
-  .cover_area_cocolunch .cocolunch_title {
+  .cover_area_cocolunch .cocolunch_title_pc {
     width: 96%;
     max-width: 1024px;
     margin: 0 auto;
     padding-top: 20px; }
+  .cover_area_cocolunch .cocolunch_title_sp {
+    display: none; }
 
 .introduction {
   border-bottom: 1px solid #c5c5c5;
@@ -2252,6 +2256,65 @@ footer {
       display: block; }
       #blogindex_wrap .blogindex li {
         width: 100%;
-        margin-bottom: 10px; } }
+        margin-bottom: 10px; }
+
+  .widget {
+    display: none; }
+
+  .blogs_footer_sp a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #a6a6a6;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    background-image: images/common; }
+  .blogs_footer_sp .gotococolunch {
+    margin-top: 30px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #e44da1;
+    text-align: center;
+    height: 20px;
+    line-height: 20px;
+    padding: 10px;
+    display: block;
+    border-radius: 6px;
+    font-weight: bold;
+    border: none; }
+
+  .cover_area_kimiblog {
+    height: 105px; }
+    .cover_area_kimiblog .cover_title_kimi_pc {
+      display: none; }
+    .cover_area_kimiblog .cover_title_kimi_sp {
+      display: block; }
+      .cover_area_kimiblog .cover_title_kimi_sp img {
+        margin: 15px 0 0 15px; }
+      .cover_area_kimiblog .cover_title_kimi_sp p {
+        color: #333;
+        margin: 20px; }
+
+  #blog {
+    margin-top: 100px; }
+    #blog .blog-footer {
+      display: block; }
+      #blog .blog-footer .snsbutton {
+        margin-top: 20px; }
+    #blog .page_navi img {
+      width: 80%; }
+
+  .cover_area_cocolunch {
+    height: 105px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
+    .cover_area_cocolunch .cocolunch_title_pc {
+      display: none; }
+    .cover_area_cocolunch .cocolunch_title_sp {
+      display: block;
+      padding-top: 30px; } }
 
 /*# sourceMappingURL=cocoknots.css.map */

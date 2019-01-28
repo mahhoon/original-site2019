@@ -176,11 +176,15 @@
           background-image: url("../images/blog/kimiheroimg_pc.jpg");
         }
 
-        .cover_title_kimi{
+        .cover_title_kimi_pc{
             width: 96%;
             max-width: 1024px;
             margin: 0 auto;
             display: flex;
+        }
+        
+        .cover_title_kimi_sp {
+            display: none;
         }
 
         img {
@@ -337,11 +341,14 @@
           background-image: url("../images/blog/cocolunch_heroimg_pc@2x.png");
         }
         
-        .cocolunch_title {
+        .cocolunch_title_pc {
             width: 96%;
             max-width: 1024px;
             margin: 0 auto;
             padding-top: 20px;
+        }
+        .cocolunch_title_sp {
+            display: none;
         }
     }
     .introduction {

@@ -27,4 +27,94 @@
             }
         }
     }
+    
+//ブログウィジェット設定
+    .widget {
+        display: none;
+    }
+    .blogs_footer_sp {
+
+        a {
+            text-decoration: none;
+            color: #333;
+            display: block;
+            height: 30px;
+            line-height: 30px;
+            border: 1px solid #a6a6a6;
+            padding-left: 10px;
+            margin-bottom: 10px;
+            background-image: images/common;
+        }
+        
+        .gotococolunch {
+            margin-top: 30px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #e44da1;
+            text-align: center;
+            height: 20px;
+            line-height: 20px;
+            padding: 10px;
+            display: block;
+            border-radius: 6px;
+            font-weight: bold;
+            border: none;
+        }
+    }
+
+    
+//kimiブログ一覧ページ
+    .cover_area_kimiblog {
+        height: 105px;
+        
+        .cover_title_kimi_pc {
+        display: none;
+        }
+        .cover_title_kimi_sp {
+            display: block;
+            img {
+                margin: 15px 0 0 15px;
+            }
+            
+            p {
+                color: #333;
+                margin: 20px;
+            }
+        }
+    }
+    
+    #blog {
+        margin-top: 100px;
+        
+        .blog-footer {
+            display: block;
+            .snsbutton {
+                margin-top: 20px;
+            }
+    }
+    .page_navi {
+        img {
+            width: 80%;
+        }
+    }
+    
+
+    }
+    
+//ココランチ
+    .cover_area_cocolunch{
+        height: 105px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        .cocolunch_title_pc {
+            display: none;
+        }
+        .cocolunch_title_sp {
+            display: block;
+            padding-top: 30px;
+        }
+    }
+
+
 }
