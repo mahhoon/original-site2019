@@ -107,7 +107,7 @@ body {
 
 .fixed {
   position: fixed;
-  background-color: #f1f0ef;
+  background-color: #fdfcf9;
   border-top: 5px solid #26499d;
   border-bottom: 1px solid #cfd9f3;
   padding-top: 10px;
@@ -1156,6 +1156,9 @@ footer {
     letter-spacing: 0.2rem;
     margin: 90px 0 0 120px; }
 
+.kimiblog_lede {
+  display: none; }
+
 #blog {
   margin-top: 50px; }
   #blog .blog_wrap {
@@ -1239,6 +1242,9 @@ footer {
   padding: 0 15px;
   border-radius: 5px;
   margin-right: 10px; }
+
+.blogs_footer_sp {
+  display: none; }
 
 /*ココランチ---------------------------
 ---------------------------------------------------*/
@@ -2261,29 +2267,33 @@ footer {
   .widget {
     display: none; }
 
-  .blogs_footer_sp a {
-    text-decoration: none;
-    color: #333;
-    display: block;
-    height: 30px;
-    line-height: 30px;
-    border: 1px solid #a6a6a6;
-    padding-left: 10px;
-    margin-bottom: 10px;
-    background-image: images/common; }
-  .blogs_footer_sp .gotococolunch {
-    margin-top: 30px;
-    text-decoration: none;
-    color: #fff;
-    background-color: #e44da1;
-    text-align: center;
-    height: 20px;
-    line-height: 20px;
-    padding: 10px;
-    display: block;
-    border-radius: 6px;
-    font-weight: bold;
-    border: none; }
+  .blogs_footer_sp {
+    display: block; }
+    .blogs_footer_sp a {
+      text-decoration: none;
+      color: #333;
+      display: block;
+      height: 30px;
+      line-height: 30px;
+      border: 1px solid #a6a6a6;
+      padding-left: 10px;
+      margin-bottom: 10px;
+      background-image: images/common; }
+    .blogs_footer_sp .gotococolunch {
+      margin-top: 30px;
+      text-decoration: none;
+      color: #fff;
+      background-color: #e44da1;
+      text-align: center;
+      height: 20px;
+      line-height: 20px;
+      padding: 10px;
+      display: block;
+      border-radius: 6px;
+      font-weight: bold;
+      border: none;
+      font-size: 13px;
+      font-size: 1.3rem; }
 
   .cover_area_kimiblog {
     height: 105px; }
@@ -2297,8 +2307,13 @@ footer {
         color: #333;
         margin: 20px; }
 
+  .kimiblog_lede {
+    width: 96%;
+    margin: 10px auto;
+    line-height: 2rem; }
+
   #blog {
-    margin-top: 100px; }
+    margin-top: 20px; }
     #blog .blog-footer {
       display: block; }
       #blog .blog-footer .snsbutton {
@@ -2315,6 +2330,11 @@ footer {
       display: none; }
     .cover_area_cocolunch .cocolunch_title_sp {
       display: block;
-      padding-top: 30px; } }
+      padding-top: 30px; }
+
+  .introduction {
+    line-height: 1.2rem; }
+    .introduction img {
+      display: none; } }
 
 /*# sourceMappingURL=cocoknots.css.map */
